@@ -1,6 +1,6 @@
-![Screenshot 2025-04-26 132127](https://github.com/user-attachments/assets/c269c3f4-993b-46cb-9ad5-570950bcee3d)![Screenshot 2025-04-26 132203](https://github.com/user-attachments/assets/9d35b7fe-51ce-4db3-acd0-8ad86135130e)
+![Screenshot 2025-04-26 132127](https://github.com/user-attachments/assets/c269c3f4-993b-46cb-9ad5-570950bcee3d)
 
-#**OishiNow - Sushi Website**
+# **OishiNow - Sushi Website**
 
 This project is built using Vite, with Vanilla JavaScript, HTML, and CSS.
 I created this project as a learning exercise to explore and apply several fundamental web development techniques:
