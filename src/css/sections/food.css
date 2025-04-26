@@ -1,0 +1,147 @@
+.food {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: var(--primary-color);
+}
+
+.food__trending-discover {
+    position: absolute;
+    top: 44%;
+    left: 44%;
+    z-index: 1;
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease-in-out;
+}
+
+.food__trending-discover:hover {
+    background: var(--black-200);
+    box-shadow: 0px 0px 10px var(--secondary-color);
+}
+
+.food__trending-discover p {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--plus-jakarta-sans);
+    text-transform: uppercase;
+    color: var(--color-white);
+}
+
+.food__trending-miso, 
+.food__trending-tempura {
+    width: 100%;
+    min-height: 640px;
+    display: flex;
+    flex-direction: row;
+}
+
+.food__trending-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 32px 64px;
+}
+
+.food__trending-list {
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.food__trending-list p {
+    flex: 1;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--secondary-color);
+}
+
+.food__trending-list li {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 12px;
+    min-width: 210px;
+}
+
+.food__trending-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background-color: var(--secondary-color);
+}
+
+.food__trending-icon img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
+.food__trending-image {
+    flex: 1;
+    position: relative;
+    padding: 32px 64px;
+    background-color: var(--color-white);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.food__trending-image img {
+    width: 364px;
+    height: 370px;
+    object-fit: contain;
+}
+
+/* Arrows */
+.food__trending-arrow {
+    position: absolute;
+    z-index: 1;
+}
+
+.food__trending-arrow img {
+    object-fit: contain;
+}
+
+.food__trending-arrow.arrow-left {
+    right: -2.7px;
+    top: 12%;
+}
+
+.food__trending-arrow.arrow-top {
+    top: -11.5px;
+    left: 20%;
+}
+
+.food__trending-arrow.arrow-left img,
+.food__trending-arrow.arrow-top img {
+    width: auto;
+    height: 100%;
+}
+
+.food__trending-arrow.arrow-bottom {
+    bottom: -6.5px;
+    right: 20%;
+}
+
+.food__trending-arrow.arrow-right {
+    left: -2.67px;
+    bottom: 12%;
+}
+
+.food__trending-arrow.arrow-bottom img,
+.food__trending-arrow.arrow-right img {
+    width: 100%;
+    height: auto;
+}
+

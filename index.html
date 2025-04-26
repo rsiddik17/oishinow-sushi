@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/sushi.png" type="image/png">
+  <link rel="stylesheet" href="src/css/style.css">
+  <title>OishiNow</title>
+</head>
+
+<body>
+  <header>
+    <nav class="header__nav">
+      <div class="header__logo">
+        <h4>OishiNow</h4>
+        <div class="header__logo-overlay"></div>
+      </div>
+
+      <ul class="header__menu">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#food">Food</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <ul class="header__menu-mobile">
+        <li>
+          <img src="src/assets/menu.svg" alt="menu">
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero__image">
+      <img src="src/assets/sushi.png" alt="sushi" data-aos="fade-up">
+      <h2 data-aos="fade-right">
+        日 <br/>
+        本 <br/>
+        食
+      </h2>
+      <div class="hero__image-overlay"></div>
+    </div>
+
+    <div class="hero__content">
+      <div class="hero__content-info">
+        <h1>Enjoy the flavor of Japanese food</h1>
+        <p>Feel the taste of the most popular Japanese food from anywhere and anytime.</p>
+
+        <div class="hero__content-buttons">
+          <button class="hero__content-order-button">Order Now</button>
+        </div>
+      </div>
+
+      <div class="hero__content-testimonial" data-aos="fade-up">
+        <div class="hero__content-customer">
+          <h4>25<span>k+</span></h4>
+          <p>Happy Customer</p>
+        </div>
+
+        <div class="hero__content-review">
+          <img src="src/assets/sukuna-up.png" alt="user">
+          <p>"This is the best Japanese food delivery service that ever existed."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-us" id="about-us">
+    <div class="about-us__image">
+      <div class="about-us__image-dango">
+        <img src="src/assets/dango.png" alt="dango" data-aos="fade-right">
+
+        <h2 >
+          団 <br>
+          子
+        </h2>
+      </div>
+
+      <button class="about-us__button">
+        Learn More
+
+        <img src="src/assets/arrow-up-right.svg" alt="learn more">
+      </button>
+
+      <div class="about-us__image-doriyaki">
+        <img src="src/assets/doriyaki.png" alt="doriyaki" data-aos="fade-left">
+        <h2>
+          ど <br>
+          ら <br>
+          焼 <br>
+          き
+        </h2>
+      </div>
+    </div>
+
+    <div class="about-us__content">
+      <p class="food__subtitle" data-aos="fade-down">About Us / 私たちに関しては</p>
+      <h3 class="food__title" data-aos="fade-left">Bringing the Authentic Taste of Japan to You</h3>
+      <p class="food__description" data-aos="fade-left">We are committed to sharing the true essence of Japanese cuisine through every dish
+        we serve. With the spirit of Omotenashi—our heartfelt hospitality—we create an experience that goes beyond
+        flavor, right at your table.</p>
+      <video src="src/assets/about-us-video.mp4" loop autoplay muted>
+      </video>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <h2 class="menu__popular-title" data-aos="flip-up">Popular Food / 人気</h2>
+
+    <div class="menu__popular-filters food__hide-scrollbar" data-aos="fade-up">
+      <button class="menu__popular-filter-btn active">All</button>
+      <button class="menu__popular-filter-btn">
+        <img src="src/assets/sushi-2.png" alt="sushi">
+        Sushi
+      </button>
+      <button class="menu__popular-filter-btn">
+        <img src="src/assets/ramen.png" alt="ramen">
+        Ramen
+      </button>
+      <button class="menu__popular-filter-btn">
+        <img src="src/assets/sashimi.png" alt="sashimi">
+        Sashimi
+      </button>
+      <button class="menu__popular-filter-btn">
+        <img src="src/assets/miso-soup.png" alt="miso-soup">
+        Miso
+      </button>
+      <button class="menu__popular-filter-btn">Others</button>
+    </div>
+
+    <div class="menu__popular-catalogue" data-aos="fade-up">
+      <article class="menu__popular-card">
+        <img src="src/assets/sushi-2.png" alt="sushi" class="menu__popular-card-image">
+        <h4 class="menu__popular-card-title">
+          Sushi
+        </h4>
+
+        <div class="menu__popular-card-details flex-between">
+          <div class="menu__popular-card-rating">
+            <img src="src/assets/star.svg" alt="rating">
+            <p>4.9</p>
+          </div>
+
+          <p class="menu__popular-card-price">$10.00</p>
+        </div>
+      </article>
+
+      <article class="menu__popular-card active-card">
+        <img src="src/assets/sashimi.png" alt="sashimi" class="menu__popular-card-image">
+        <h4 class="menu__popular-card-title">
+          Sashimi
+        </h4>
+
+        <div class="menu__popular-card-details flex-between">
+          <div class="menu__popular-card-rating">
+            <img src="src/assets/star.svg" alt="rating">
+            <p>5</p>
+          </div>
+
+          <p class="menu__popular-card-price">$15.00</p>
+        </div>
+      </article>
+
+      <article class="menu__popular-card">
+        <img src="src/assets/ramen.png" alt="ramen" class="menu__popular-card-image">
+        <h4 class="menu__popular-card-title">
+          Ramen
+        </h4>
+
+        <div class="menu__popular-card-details flex-between">
+          <div class="menu__popular-card-rating">
+            <img src="src/assets/star.svg" alt="rating">
+            <p>4.8</p>
+          </div>
+
+          <p class="menu__popular-card-price">$12.00</p>
+        </div>
+      </article>
+    </div>
+
+    <button class="menu__popular-button">
+      Explore Food
+      <img src="src/assets/arrow-right.svg" alt="arrow-right">
+    </button>
+  </section>
+
+  <section class="food" id="food">
+    <section class="food__trending-miso">
+
+      <div class="food__trending-image flex-center">
+        <img src="src/assets/miso-soup.png" alt="miso-soup"  data-aos="fade-right">
+
+        <div class="food__trending-arrow arrow-left ">
+          <img src="src/assets/arrow-vertical.svg" alt="arrow-vertical">
+        </div>
+
+        <div class="food__trending-arrow arrow-bottom ">
+          <img src="src/assets/arrow-horizontal.svg" alt="arrow-horizontal">
+        </div>
+      </div>
+
+      <div class="food__trending-content"  data-aos="fade-left">
+        <p class="food__subtitle">
+          What’s Trending / トレンド
+        </p>
+
+        <h3 class="food__title">Japanese Miso Soup</h3>
+        <p class="food__description">Feel the taste of the most delicious Miso here.</p>
+
+        <ul class="food__trending-list flex-between">
+          <li>
+            <div class="food__trending-icon flex-center">
+              <img src="src/assets/check.svg" alt="check">
+            </div>
+            <p>White Miso Soup</p>
+          </li>
+
+          <li>
+            <div class="food__trending-icon flex-center">
+              <img src="src/assets/check.svg" alt="check">
+            </div>
+            <p>Red Miso Soup</p>
+          </li>
+
+          <li>
+            <div class="food__trending-icon flex-center">
+              <img src="src/assets/check.svg" alt="check">
+            </div>
+            <p>Mixed Miso Soup</p>
+          </li>
+
+          <li>
+            <div class="food__trending-icon flex-center">
+              <img src="src/assets/check.svg" alt="check">
+            </div>
+            <p>Tofu Miso Soup</p>
+          </li>
+
+          <li>
+            <div class="food__trending-icon flex-center">
+              <img src="src/assets/check.svg" alt="check">
+            </div>
+            <p>Mushroom Miso Soup</p>
+          </li>
+
+          <li>
+            <div class="food__trending-icon flex-center">
+              <img src="src/assets/check.svg" alt="check">
+            </div>
+            <p>Wakame Miso Soup</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="food__trending-discover"  data-aos="zoom-in">
+      <p>Discover</p>
+    </div>
+
+    <section class="food__trending-tempura">
+
+      <div class="food__trending-content"  data-aos="fade-right">
+        <p class="food__subtitle">
+          What’s Trending / トレンド
+        </p>
+
+        <h3 class="food__title">Japanese Tempura</h3>
+        <p class="food__description">Feel the taste of the most delicious Tempura here.</p>
+
+        <ul class="food__trending-list flex-between">
+          <li>
+            <div class="food__trending-icon flex-center">
+              <img src="src/assets/check.svg" alt="check">
+            </div>
+            <p>Ebi Tempura</p>
+          </li>
+
+          <li>
+            <div class="food__trending-icon flex-center">
+              <img src="src/assets/check.svg" alt="check">
+            </div>
+            <p>Kakiage Tempura</p>
+          </li>
+
+          <li>
+            <div class="food__trending-icon flex-center">
+              <img src="src/assets/check.svg" alt="check">
+            </div>
+            <p>Yasai Tempura</p>
+          </li>
+
+          <li>
+            <div class="food__trending-icon flex-center">
+              <img src="src/assets/check.svg" alt="check">
+            </div>
+            <p>Nasu Tempura</p>
+          </li>
+
+          <li>
+            <div class="food__trending-icon flex-center">
+              <img src="src/assets/check.svg" alt="check">
+            </div>
+            <p>Shiitake Tempura</p>
+          </li>
+
+          <li>
+            <div class="food__trending-icon flex-center">
+              <img src="src/assets/check.svg" alt="check">
+            </div>
+            <p>Kabocha Tempura</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="food__trending-image flex-center">
+        <img src="src/assets/tempura.png" alt="tempura"  data-aos="fade-left">
+
+        <div class="food__trending-arrow arrow-top ">
+          <img src="src/assets/arrow-horizontal.svg" alt="arrow-horizontal">
+        </div>
+
+        <div class="food__trending-arrow arrow-right ">
+          <img src="src/assets/arrow-vertical.svg" alt="arrow-vertical">
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section class="contact flex-center" id="contact">
+    <h2 data-aos="flip-down">
+      Get offers stright <br />
+      to your inbox
+    </h2>
+    <p data-aos="fade-up">Sign up for the OishiNow newsletter</p>
+
+    <div class="contact__form" data-aos="fade-up">
+      <input type="text" placeholder="Enter your email address"/>
+      <button>Get Started</button>
+    </div>
+  </section>
+
+  <footer class="footer flex-between">
+    <h3 class="footer__logo">
+      <span>Oishi</span>Now
+    </h3>
+
+    <ul class="footer__nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about-us">About Us</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#food">Food</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <ul class="footer__social flex-center">
+      <li class="flex-center">
+        <img src="src/assets/facebook.svg" alt="facebook" />
+      </li>
+      <li class="flex-center">
+        <img src="src/assets/instagram.svg" alt="instagram" />
+      </li>
+      <li class="flex-center">
+        <img src="src/assets/twitter.svg" alt="twitter" />
+      </li>
+    </ul>
+
+    <div class="footer__copy">
+      <span>
+        &#169; Copyright OishiNow. All rights reserved
+      </span>
+    </div>
+  </footer>
+
+  <script src="src/js/script.js" type="module"></script>
+</body>
+</html>

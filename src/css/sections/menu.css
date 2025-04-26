@@ -1,0 +1,196 @@
+.menu {
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-creamson);
+    overflow: hidden;
+}
+
+.menu__popular-title {
+    font-size: 56px;
+    font-family: var(--playfair-display);
+    font-weight: 600;
+    line-height: 78px;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.menu__popular-filters {
+    margin-top: 48px;
+    max-width: 100%;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.menu__popular-filter-btn {
+    padding: 10px 28px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 46px;
+    font-size: 16px;
+    font-weight: 500px;
+    line-height: 25px;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.menu__popular-filter-btn img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.menu__popular-filter-btn.active {
+    background: var(--color-white);
+    color: var(--primary-color)
+}
+
+.menu__popular-filter-btn:hover {
+    background: var(--color-white);
+    color: var(--primary-color)
+}
+
+.menu__popular-catalogue {
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 56px;
+}
+
+.menu__popular-card {
+    padding: 38px;
+    min-width: 260px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;  
+    border-radius: 36px;
+    background: var(--primary-color);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.menu__popular-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+.menu__popular-card-image {
+    width: 220px;
+    height: auto;
+    object-fit: contain;
+}
+
+.menu__popular-card-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: var(--playfair-display);
+    color: var(--color-white);
+    text-align: center;
+}
+
+.menu__popular-card-details {
+    width: 100%;
+    margin-top: 32px;
+}
+
+.menu__popular-card-rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu__popular-card-rating img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.menu__popular-card-rating p {
+    font-size: 20px; 
+    font-weight: 300;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--color-white);
+}
+
+.menu__popular-card-price {
+    font-size: 20px; 
+    font-weight: 500;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--color-white);
+}
+
+.menu__popular-card.active-card {
+    background: var(--color-white);
+    min-width: 340px;
+}
+
+.menu__popular-card.active-card .menu__popular-card-image {
+    width: 270px;
+    height: 260px;
+}
+
+.menu__popular-card.active-card .menu__popular-card-title {
+    color: var(--black-500);
+    font-size: 32px;
+}
+
+.menu__popular-card.active-card .menu__popular-card-rating img {
+    width: 32px;
+    height: 32px;
+}
+
+.menu__popular-card.active-card .menu__popular-card-rating p {
+    font-size: 24px;
+    color: var(--gray-100);
+}
+
+.menu__popular-card.active-card .menu__popular-card-price {
+    font-size: 24px;
+    color: var(--secondary-color);
+}
+
+.menu__popular-button {
+    width: fit-content;
+    padding: 20px 30px;
+    margin: 80px auto 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    font-family: var(--plus-jakarta-sans);
+    color: #fff;
+    border: none;
+    outline: none;
+    background: var(--secondary-color);
+    border-radius: 64px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.menu__popular-button:hover {
+    background: var(--black-200);
+    box-shadow: 0px 0px 10px var(--secondary-color);
+}
+
+.menu__popular-button img{
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+    margin-left: 21px;
+    transition: transform 0.3s ease;
+}
+
+.menu__popular-button:hover img {
+    transform: translateX(5px); 
+}
